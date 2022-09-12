@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     padding: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-    background-color: #f3dec9;
+    background-color: #fecaca;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 
 header {
     padding: 1rem;
-    background-color: #00556a;
+    background-color: #ef4444;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -26,7 +27,7 @@ header {
 
 header h1 {
     text-align: initial;
-    color: #ff5200;
+    color: white;
 }
 
 nav {
@@ -55,7 +56,7 @@ main h1 {
 
 .input-label {
     font-size: larger;
-    color: #00556a;
+    color: #991b1b;
     width: 256px;
 }
 
@@ -69,7 +70,7 @@ main h1 {
     padding: 0.6rem 1rem;
     margin: 1rem;
     border: 2px solid #FFFFFF;
-    background-color: #00556a;
+    background-color: #991b1b;
     color: #FFFFFF;
     border-radius: 0.5rem;
     width: 100%;
@@ -90,7 +91,7 @@ input::-webkit-inner-spin-button {
     border-radius: 0.5rem;
     font-size: large;
     cursor: pointer;
-    outline: #00556a;
+    outline: #991b1b;
     margin: 1rem auto;
     display: block;
 }
@@ -119,7 +120,7 @@ input::-webkit-inner-spin-button {
     padding: 3px;
     border-radius: 5px;
     border: 2px solid #ff5200;
-    color: #00546c;
+    color: #991b1b;
 }
 
 .footer-text a:hover {
@@ -166,8 +167,3 @@ input::-webkit-inner-spin-button {
     }
 
 }
-
-input {
-    width : 300px;
-}
-

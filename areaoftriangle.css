@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #f3dec9;
+    background-color: #fecaca ;
 }
 
 a {
@@ -17,7 +17,7 @@ a {
 
 header {
     padding: 1rem;
-    background-color: #00556a;
+    background-color: #ef4444;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ header {
 
 header h1 {
     text-align: initial;
-    color: #ff5200;
+    color: white;
 }
 
 nav {
@@ -50,7 +50,7 @@ main h1 {
 
 .input-label {
     font-size: larger;
-    color: #00556a;
+    color:black;
     width: 256px;
 }
 
@@ -64,7 +64,7 @@ main h1 {
     padding: 0.6rem 1rem;
     margin: 1rem;
     border: 2px solid #FFFFFF;
-    background-color: #00556a;
+    background-color: #ef4444;
     color: #FFFFFF;
     border-radius: 0.5rem;
     width: 100%;
@@ -83,7 +83,7 @@ input::-webkit-inner-spin-button {
     border-radius: 0.5rem;
     font-size: large;
     cursor: pointer;
-    outline: #00556a;
+    outline: #ef4444;
     margin: 1rem auto;
     display: block;
 }

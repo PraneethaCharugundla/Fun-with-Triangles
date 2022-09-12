@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     padding: 0;
@@ -10,7 +9,8 @@
 }
 
 body {
-    background-color: #f3dec9;
+    background-color: #fecaca
+    ;
 }
 
 a {
@@ -19,7 +19,7 @@ a {
 
 header {
     padding: 1rem;
-    background-color: #00556a;
+    background-color: #ef4444;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ header {
 
 header h1 {
     text-align: initial;
-    color: #ff5200;
+    color: white;
 }
 
 nav {

@@ -144,3 +144,19 @@ input::-webkit-inner-spin-button {
     }
 
 }
+#socials {
+    display: flex;
+    flex-direction : row;
+    justify-content : space-between;
+    width: 10%;
+    margin-left: auto;
+    margin-right:auto;
+    
+   
+  }
+  footer {
+    padding-top: 2rem;
+  }
+  #container { 
+    padding-bottom: 5rem;
+  }

@@ -17,7 +17,7 @@ const correctAnswers = [
     const formResults = new FormData(quizform);
     // console.log(formResults.values());
     for (let value of formResults.values()) {
-      if (value === correctAnswers[index]) {
+      if (correctAnswers.includes(value) ) {
         score = score + 1;
       }
       index = index + 1;

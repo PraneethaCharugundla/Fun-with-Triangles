@@ -14,7 +14,7 @@ function caluclateHypotenuse(){
 const sumOfSquares = caluclateSumOfSquares
 (Number(sides[0].value),Number(sides[1].value));
 const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
-outputE1.innerText = "The length of hypotenuse is" + lengthOfHypotenuse ;
+outputE1.innerText = "The length of hypotenuse is" + lengthOfHypotenuse.toFixed(2);
 }
 
 hypotenuseButton.addEventListener('click',caluclateHypotenuse);

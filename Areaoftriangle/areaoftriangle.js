@@ -1,44 +1,30 @@
-const firstSide = document.querySelector("#first-side");
-const secondSide = document.querySelector("#second-side");
-const thirdSide = document.querySelector("#third-side");
-const calculate = document.querySelector("#calculate-area");
-const output = document.querySelector("#output");
+const sides = document.querySelectorAll(".sides");
+const checkButton = document.querySelector("#check-area");
+const message = document.querySelector("#message-div");
 
 
 
-function calculateArea(e) {
+function productOfSides(a, b) {
+  const sideProduct = a * b;
+  return sideProduct;
+}
 
-  e.preventDefault(); 
+function calculateArea() {
+  var base = Number(sides[0].value);
+  var height = Number(sides[1].value);
 
-  const firstSideValue = Number(firstSide.value);
-  const secondSideValue = Number(secondSide.value);
-  const thirdSideValue = Number(thirdSide.value);
+  if (base > 0 && height > 0) {
+    const sideProduct = productOfSides(base, height);
+    const area = 1 / 2 * (sideProduct);
+    message.innerText = `The area of triangle with the entered values is ${area} Cm-Square`;
 
-  if (firstSide.value <= 0 || secondSide.value <= 0 || thirdSide.value <= 0) {
-    console.log(firstSide.value);
-    console.log(secondSide.value);
-    console.log(thirdSide.value);
-    output.innerText = `All the three sides of a triangle should be greater than or equal to 1`;
-  }
-  else if (
-    firstSideValue + secondSideValue > thirdSideValue &&
-    secondSideValue + thirdSideValue > firstSideValue &&
-    firstSideValue + thirdSideValue > secondSideValue
-  ) {
-    const semiPerimeter =
-      (firstSideValue + secondSideValue + thirdSideValue) / 2;
-
-    const result = Math.sqrt(
-      semiPerimeter *
-        (semiPerimeter - firstSideValue) *
-        (semiPerimeter - secondSideValue) *
-        (semiPerimeter - thirdSideValue)
-    ).toFixed(2);
-    console.log(result)
-    output.innerText = `Area of a triangle using heron's formula is ${result} units`;
   } else {
-    output.innerText = "Given input values does not form a Triangle";
+    message.innerText = `Input Error: Please Enter valid values in all the fields!`;
+
   }
 }
 
-calculate.addEventListener("submit", calculateArea);
+
+
+checkButton.addEventListener("click", calculateArea);
+

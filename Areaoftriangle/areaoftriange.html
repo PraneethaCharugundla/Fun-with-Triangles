@@ -9,49 +9,24 @@
         <link rel="stylesheet" href="/Areaoftriangle/areaoftriangle.css" />
     </head>
     <body>
-        <header>
-            <a href="/Areaoftriangle/areaoftriange.html"><h1>Fun with triangles</h1></a>
-            <nav>
-                <nav>
-                    <a href="/IsTriangle/IsTriangle.html">Is Triangle?</a>
-                    <a href="/index.html">Quiz</a>
-                    <a href="/Hypotenuse/hypotenuse.html" >Hypotenuse</a>
-                    <a href="/Areaoftriangle/areaoftriange.html" class="active">Area of Triangle</a>
-                </nav>
-        </header>
-        <main class="calculate-areaofTriangle">
-            <h1>Calculate Area of a triangle</h1>
-            <form id="calculate-area">
-                <label class="input-label" for="first-side">
-                    <p>Enter first side of a triangle</p>
-                    <input
-                        class="input-text"
-                        required
-                        type="number"
-                        id="first-side"
-                    />
-                </label>
-                <label class="input-label" for="second-side">
-                    <p>Enter second side of a triangle</p>
-                    <input
-                        class="input-text"
-                        required
-                        type="number"
-                        id="second-side"
-                    />
-                </label>
-                <label class="input-label" for="third-side">
-                    <p>Enter third side of a triangle</p>
-                    <input
-                        class="input-text"
-                        required
-                        type="number"
-                        id="third-side"
-                    />
-                </label>
-                <button class="check-btn" type="submit">Calculate</button>
-            </form>
-            <h3 id="output"></h3>
+    
+        <nav>
+            <a href="/IsTriangle/IsTriangle.html" >Is Triangle?</a>
+            <a href="/index.html">Quiz</a>
+            <a href="/Hypotenuse/hypotenuse.html" >Hypotenuse</a>
+            <a href="/Areaoftriangle/areaoftriange.html" class="active">Area of Triangle</a>
+          </nav>
+        <div class="container">
+    
+            <h1>Triangle area Calculator</h1>
+            <label for="sides">Base in Cm <input class="sides" type="number"></label><br>
+    
+            <label for="sides">Height in cm <input class="sides" type="number"></label><br>
+    
+            <button id="check-area">Area</button>
+            <div id="message-div"></div>
+        </div>
+    
             <footer>
                 <p>© | 2022 | Praneetha </p>
                 <div id="socials" ><span><a href="https://github.com/PraneethaCharugundla"><img src="https://img.icons8.com/windows/32/000000/github.png"/>

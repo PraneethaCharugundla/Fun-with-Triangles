@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     padding: 0;
@@ -32,6 +33,9 @@ header h1 {
 nav {
     text-align: right;
     color: #fff;
+    background-color: #ef4444;
+    padding: 4rem 3rem 1rem 3rem;
+    
 }
 
 nav>a {
@@ -77,21 +81,15 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-.check-btn {
-    border: none;
-    padding: 0.7rem 1rem;
-    border-radius: 0.5rem;
-    font-size: large;
-    cursor: pointer;
-    outline: #ef4444;
-    margin: 1rem auto;
-    display: block;
-}
-
-.check-btn:hover {
+#check-area { 
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
     background-color: black;
     color: white;
-    border: 2px solid #FFFFFF;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
 }
 
 #output {
@@ -171,4 +169,10 @@ input::-webkit-inner-spin-button {
     width: 100%; */
     left: 0;
     
+  }
+  .container { 
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
   }
